@@ -34,4 +34,4 @@ python server.py -nc 100 -cf 0.1 -E 4 -B 1 -mn pathmnist_2nn  -ncomm 10 -iid 1 -
 which means there are 100 clients,  we randomly select 10 in each communicating round.  The data set are allocated in Non-IID way.  The epoch and batch size are set to 5 and 10. The learning rate is 0.01, we validate the codes every 20 rounds during the training, training stops after 1000 rounds. 
 
 ### Contributors.
-This code was written by Zhi Wang and organized by Zixuan He.
+This code was written by King-wang-zhi and organized by Zixuan He.
