@@ -1,0 +1,17 @@
+-mn:
+bloodmnist_ViT
+bloodmnist_cnn
+pathmnist_ViT
+pathmnist_cnn
+pneumoniamnist_ViT
+pneumoniamnist_cnn
+iid:
+0   1
+dpm:
+no_dp   Laplace   Gaussian
+dpp:
+pdp    gdp
+
+
+python server.py -nc 100 -cf 0.1 -E 4 -B 10 -mn mnist_2nn -ncomm 300 -iid 1 -lr 0.1 -vf 1 -g 0 -asam 1
+python server.py -nc 100 -cf 0.1 -E 4 -B 10 -ncomm 1 -iid 1 -lr 0.1 -vf 1 -g 0 -asam 1 -mn bloodmnist_cnn -iid 0 -dpm Gaussian -dpp pdp
