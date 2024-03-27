@@ -9,7 +9,8 @@
 
 ### data sets
 
-The dataset files are placed in the "data" folder.
+The pneumoniamnist dataset are placed in the "data" folder called pneumoniamnist.npz.
+Other datasets need to be downloaded from the website [(https://zenodo.org/records/10519652)](https://zenodo.org/records/10519652). They are "bloodmnist.npz" and "pathmnist.npz".
 
 ### usage
 
