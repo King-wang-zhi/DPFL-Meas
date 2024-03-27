@@ -7,7 +7,7 @@
 
 2.torch1.12.1+cu113
 
-### data sets
+### datasets
 
 The pneumoniamnist dataset are placed in the "data" folder called pneumoniamnist.npz.
 Other datasets need to be downloaded from the website [(https://zenodo.org/records/10519652)](https://zenodo.org/records/10519652). They are "bloodmnist.npz" and "pathmnist.npz".
@@ -32,3 +32,6 @@ python server.py -nc 1 -cf 1 -E 4 -B 10 -mn mnist_2nn  -ncomm 5 -iid 1 -lr 0.01 
 python server.py -nc 100 -cf 0.1 -E 4 -B 1 -mn pathmnist_2nn  -ncomm 10 -iid 1 -lr 0.01 -vf 1 -g 0 -dpm no_dp
 
 which means there are 100 clients,  we randomly select 10 in each communicating round.  The data set are allocated in Non-IID way.  The epoch and batch size are set to 5 and 10. The learning rate is 0.01, we validate the codes every 20 rounds during the training, training stops after 1000 rounds. 
+
+### Contributors.
+This code was written by Zhi Wang and organized by Zixuan He.
